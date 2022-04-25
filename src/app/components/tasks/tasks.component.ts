@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarea_B_interface } from 'src/app/Tareas_B';
-import { listaDeTareas_A } from 'src/app/mock_tareas_A';
+// import { listaDeTareas_A } from 'src/app/mock_tareas_A';
+import { TareaService } from 'src/app/service/tarea.service';
 
 
 
@@ -12,11 +13,15 @@ import { listaDeTareas_A } from 'src/app/mock_tareas_A';
 })
 export class TasksComponent implements OnInit {
 
-  Taskarray: Tarea_B_interface[] = listaDeTareas_A
+  Taskarray: Tarea_B_interface[] = []
 
-  constructor() { }
+  constructor(private taskService: TareaService) { }
 
   ngOnInit(): void {
+
+    this.taskService.getTasks().subscribe((tareas)=>{
+      this.Taskarray = tareas
+    })
   }
 
 }
