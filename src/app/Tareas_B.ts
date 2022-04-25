@@ -1,6 +1,6 @@
-export interface Tarea_B {
+export interface Tarea_B_interface {
     Id?: number,
-    Tarea: string,
+    Text: string,
     Dia: string,
     Reminder: boolean
 }

@@ -1,26 +1,26 @@
-import { Tarea_B } from "./Tareas_B"
-export const TAREAS_A: Tarea_B[] = [
+import { Tarea_B_interface } from "./Tareas_B"
+export const listaDeTareas_A: Tarea_B_interface[] = [
     {
         Id: 1,
-        Tarea: "Terminar Modulo Angular",
+        Text: "Terminar Modulo Angular",
         Dia: "Abril 26 a las 12:00",
         Reminder: true 
     },
     {
         Id: 2,
-        Tarea: "Comprar Almuerzo",
+        Text: "Comprar Almuerzo",
         Dia: "Abril 26 a las 1:00",
         Reminder: true 
     },
     {
         Id: 3,
-        Tarea: "Practicar Codigo",
+        Text: "Practicar Codigo",
         Dia: "Abril 27 a las 9:00",
         Reminder: false
     },
     {
         Id: 4,
-        Tarea: "Mirar un Capitulo",
+        Text: "Mirar un Capitulo",
         Dia: "Abril 27 a las 21:00",
         Reminder: false 
     },
